@@ -1,3 +1,51 @@
-#BrowseDiv {
-    border: solid black 1px;
+body{
+    background-color:#000000;
+}
+
+
+section{
+    width: 55%;
+    height: 450px;
+    padding: 1em;
+    margin-left: 3%;
+    float:left;
+    border: solid black 2px;
+    clear: both;
+    overflow:hidden;
+    background-color:#FFFFFF;
+}
+
+
+#BBReccomends{
+    width: 35%;
+    height: 450px;
+    padding: 1em;
+    margin-right: 3%;
+    margin-left: 15%;
+    border: solid black 2px;
+    overflow:hidden;
+    background-color:#FFFFFF;
+}
+
+#Header {
+    padding: 1em;
+    text-align: center;
+    clear: both;
+    background-color: #800000;
+}
+#Nav-Bar{
+    text-align: center;
+    background-color: #efefef;
+    clear: both;
+}
+
+#footer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+
 }
