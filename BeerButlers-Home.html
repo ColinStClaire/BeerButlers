@@ -8,7 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
-            breweryDBGetBeer("IPA");
+
         })
     </script>
 </head>
@@ -26,6 +26,9 @@
 <section>
     <div id="Drink-Feature">
         <h2>This is where the get a drink feature will go</h2>
+        <div id="BeerSearchContainer"><input id="BeerSearch">
+            <button type="button" onclick="breweryDBGet('beers', $('#BeerSearch').val())">Search</button>
+        </div>
         <p>""</p>
         <p>""</p>
         <p>""</p>
