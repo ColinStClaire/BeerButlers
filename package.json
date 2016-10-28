@@ -4,6 +4,7 @@
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "latest",
-    "request": "^2.76.0"
+    "request": "^2.76.0",
+    "brewerydb-node": "latest"
   }
 }
