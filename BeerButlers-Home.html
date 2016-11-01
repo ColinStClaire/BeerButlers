@@ -9,8 +9,9 @@
     <script src="js/main.js"></script>
     <script>
         $(document).ready(function() {
-            $.getJSON("data/stout.json", function(json) {
-                console.log(json.data[0].id);
+            $('#search').click(function() {
+                var val = $('#BeerSearch').val();
+                getJSON('data/' + val + '.json');
             });
         })
     </script>
@@ -30,9 +31,9 @@
     <div id="Drink-Feature">
         <h2>This is where the get a drink feature will go</h2>
         <div id="BeerSearchContainer"><input id="BeerSearch">
-            <button type="button" onclick="breweryDBGet('beers', $('#BeerSearch').val())">Find my beer!</button>
+            <button id="search" type="button">Find my beer!</button>
         </div>
-        <p>""</p>
+        <div id="BeerHolder1"></div>
         <p>""</p>
         <p>""</p>
         <p>""</p>
