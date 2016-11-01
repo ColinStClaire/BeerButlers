@@ -2,6 +2,15 @@
  * Created by colinstclaire on 10/18/16.
  */
 
+
+/*---------------------------------------------
+Developer: Colin St. Claire
+Function Name: breweryDBGet(endpoint, parameter);
+Description: Makes a GET request to the BreweryDB API
+to get JSON objects containing beer data
+Modified: 11/01/16
+---------------------------------------------*/
+
 function breweryDBGet(endpoint, parameter) {
     /*$.ajax({
         type: "GET",
@@ -21,7 +30,7 @@ function breweryDBGet(endpoint, parameter) {
             alert("ERROR: " + thrownError + " was thrown");
         }
     })*/
-
+    var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
     var req = new XMLHttpRequest();
     req.open("get", URL, true);
     req.addEventListener('load', function() {
@@ -39,9 +48,5 @@ function breweryDBGet(endpoint, parameter) {
     alert(data.name);
 }
 
-/*var BreweryDB = require("brewerydb-node");
-var brewDB = new BreweryDB(["3dad4576e0edfa7128dbb5831f6968b8"]);
-
-brewDB.beer.getById("avMkil", {}, callback);
-*/
+console.log("done in main.js");
 

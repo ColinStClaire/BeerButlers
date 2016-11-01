@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <title>BeerButlers Home</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/MainJS.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/main.js"></script>
     <script>
         $(document).ready(function() {
-
+            $.getJSON("data/stout.json", function(json) {
+                console.log(json.data[0].id);
+            });
         })
     </script>
 </head>
