@@ -9,7 +9,7 @@
  the results page.
  Modified: 11/01/16
  ---------------------------------------------*/
-/*function parseJSON(filePath) {
+function parseJSON(filePath) {
     var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
     var request = new XMLHttpRequest();
     request.open("GET", filePath, false);
@@ -22,7 +22,7 @@
             console.log("ERROR");
         }
     }
-}*/
+}
 
 //parseJSON("/data/stout.json");
 
@@ -36,8 +36,14 @@
  ---------------------------------------------*/
 function getJSON(filePath) {
     $.getJSON(filePath, function (json) {
-        $("<img src='" + json.data[0].labels.medium + "'>").appendTo("#BeerHolder1");
-        $("<p>" + json.data[0].name + "</p>").appendTo("#BeerHolder1");
+        for (var element in json.data) {
+            if (element.hasOwnProperty("label")) {
+                $("<img src='" + element.labels.medium + "'>").appendTo("#BeerHolder1");
+            } else {
+                console.log("element: " + element + " doesn't have a label");
+            }
+            $("<p>" + element.name + "</p>").appendTo("#BeerHolder1");
+        }
 
     });
 }
