@@ -36,15 +36,23 @@ function parseJSON(filePath) {
  ---------------------------------------------*/
 function getJSON(filePath) {
     $.getJSON(filePath, function (json) {
-        for (var element in json.data) {
-            if (element.hasOwnProperty("label")) {
-                $("<img src='" + element.labels.medium + "'>").appendTo("#BeerHolder1");
-            } else {
-                console.log("element: " + element + " doesn't have a label");
+        /*$.each(json, function(key, val) {
+            console.log("key: " + key + ", val: " + val);
+            if (val.hasOwnProperty("labels")) {
+                console.log(val + " has a label.");
+                $("<img src='" + val.labels.medium + "'>").appendTo("#BeerHolder1");
             }
-            $("<p>" + element.name + "</p>").appendTo("#BeerHolder1");
-        }
+            $("<p>" + val.name + "</p>").appendTo("#BeerHolder1");
+        });
+        $("<p>" + json.data[0].name + "</p>").appendTo("#BeerHolder1");*/
 
+        for (element in json.data) {
+            var img = json.data[element].labels;
+            if (typeof img !== 'undefined' && img) {
+                console.log(img);
+                $("<img src='" + json.data[element].labels.medium + "'>").appendTo("#BeerHolder1");
+            }
+        }
     });
 }
 
