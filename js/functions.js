@@ -40,11 +40,28 @@ function getJSON(filePath) {
         for (var element in json.data) {
             var img = json.data[element].labels;
             if (typeof img !== 'undefined' && img) {
-                $("<img src='" + img.medium + "'>").appendTo("#BeerHolder1");
+                $("<img src='" + img.medium + "'>").appendTo("#beerHolderResults");
             }
             //$("<p>" + element.name + "</p>").appendTo("#BeerHolder1");
         }
     });
 }
+
+/*---------------------------------------------
+ Developer: Colin St. Claire
+ Function Name: searchAndNavToResults(filePath);
+ Description: Navigates to the results.html page,
+ and performs a beer search
+ Modified: 11/01/16
+ ---------------------------------------------*/
+function searchAndNavToResults(parameter) {
+    var resultsPage = window.open("results.html","_self");
+    resultsPage.getJSON("data/" + parameter + ".json");
+    //$('#beerSearchResults').val(parameter);
+    /*$('#searchButtonResults').triggerHandler("click", function() {
+        getJSON("data/" + parameter + ".json");
+    })*/
+}
+
 
 console.log("done in functions.js");

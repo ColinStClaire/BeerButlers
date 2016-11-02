@@ -9,15 +9,9 @@
     <script src="js/main.js"></script>
     <script>
         $(document).ready(function() {
-            $('#search').click(function() {
-                var val = $('#BeerSearch').val();
-                getJSON('data/' + val + '.json');
-            });
+
         })
     </script>
-
-
-
 </head>
 <body>
 <div id="Header">
@@ -27,21 +21,21 @@
 </div>
 
 <div id="Nav-Bar">
-    <p><a href="BeerButlers-Home.html">Home</a> | <a href="BrowseBeers.html">Browse drinks</a> | <a href="FAQs.html">FAQs</a> | <a href="BeerArticles.html">Beer Articles</a> | <a href = "Contact.html"> Contact</a></p>
+    <p><a href="home.html">Home</a> | <a href="browse.html">Browse drinks</a> | <a href="faq.html">FAQs</a> | <a href="articles.html">Beer Articles</a> | <a href = "contact.html"> Contact</a></p>
 </div>
 
 <section>
     <div id="Drink-Feature">
         <h2>This is where the get a drink feature will go</h2>
-        <div id="BeerSearchContainer"><input id="BeerSearch">
-            <button onclick=window.open("results.html","_self") id="search" type="button">Find my beer!</button>
+        <div id="beerSearchContainerHome">
+            <button id="searchButtonHome" type="button" onclick=window.open("results.html","_self");>Search for beer!</button>
         </div>
-        <div id="BeerHolder1"></div>
+        <div id="beerHolderHome"></div>
 
 
     </div>
 
-    <div id="Food-Feature">
+    <div id="foodFeatureHome">
         <h2>This is where the get food feature will go</h2>
 
     </div>
@@ -61,7 +55,7 @@
 </div>
 
 <div id="footer">
-    <p><a href="BeerButlers-Home.html">Home</a> | <a href="BrowseBeers.html">Browse drinks</a> | <a href="FAQs.html">FAQs</a> | <a href="BeerArticles.html">Beer Articles</a> | <a href = "Contact.html"> Contact</a></p>
+    <p><a href="home.html">Home</a> | <a href="browse.html">Browse drinks</a> | <a href="faq.html">FAQs</a> | <a href="articles.html">Beer Articles</a> | <a href = "contact.html"> Contact</a></p>
 
 </div>
 
