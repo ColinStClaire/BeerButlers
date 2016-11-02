@@ -5,16 +5,26 @@ body{
 
 section{
     width: 55%;
-    height: 450px;
     padding: 1em;
     margin-left: 3%;
     float:left;
-    border: solid black 2px;
     clear: both;
     overflow:hidden;
     background-color:#FFFFFF;
 }
 
+#FAQS{
+    padding: 1em;
+    overflow:auto;
+    background-color:#FFFFFF;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+section.content {
+    flex: 1;
+}
 
 #BBReccomends{
     width: 35%;
@@ -47,5 +57,6 @@ section{
     padding: 1rem;
     background-color: #efefef;
     text-align: center;
+    clear: both;
 
 }
