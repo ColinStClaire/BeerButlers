@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<link rel="stylesheet" type="text/css" href="main.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<div id="Header">
+    <h1>Beer Butlers</h1>
+    <h2>What can we get you?</h2>
+
+</div>
+
+<div id="Nav-Bar">
+    <p><a href="BeerButlers-Home.html">Home</a> | <a href="BrowseBeers.html">Browse drinks</a> | <a href="FAQs.html">FAQs</a> | <a href="BeerArticles.html">Beer Articles</a> | <a href = "Contact.html"> Contact</a></p>
+</div>
+
+<section>
+    <div id="Drink-Feature">
+        <h2>Questions or suggestions can be emailed to the developers</h2>
+        <p>We can insert a generic email form here</p>
+        <?php
+$action=$_REQUEST['action'];
+if ($action=="")    /* display the contact form */
+    {
+    ?>
+        <form  action="" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="action" value="submit">
+            Your name:<br>
+            <input name="name" type="text" value="" size="30"/><br>
+            Your email:<br>
+            <input name="email" type="text" value="" size="30"/><br>
+            Your message:<br>
+            <textarea name="message" rows="7" cols="30"></textarea><br>
+            <input type="submit" value="Send email"/>
+        </form>
+        <?php
+    }
+else                /* send the submitted data */
+    {
+    $name=$_REQUEST['name'];
+    $email=$_REQUEST['email'];
+    $message=$_REQUEST['message'];
+    if (($name=="")||($email=="")||($message==""))
+        {
+        echo "All fields are required, please fill the form again.";
+        }
+    else{
+
+        $from="From: $name$email\r\nReturn-path: $email";
+        $subject="Message sent using your contact form";
+        mail("adriene.n.shanders@gmail.com", $subject, $message, $from);
+        echo "Email sent!";
+        }
+        }
+        ?>
+
+    </div>
+
+</section>
+
+
+<div id="footer">
+    <p><a href="BeerButlers-Home.html">Home</a> | <a href="BrowseBeers.html">Browse drinks</a> | <a href="FAQs.html">FAQs</a> | <a href="BeerArticles.html">Beer Articles</a> | <a href = "Contact.html"> Contact</a></p>
+
+</div>
+
+</body>
+
+</html>
