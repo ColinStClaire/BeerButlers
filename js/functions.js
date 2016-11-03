@@ -59,8 +59,8 @@ function getAllBeers(filePath) {
         for (var element in json.data) {
             var beer = json.data[element];
             $("<li><a href=''>" + beer.name + "</a></li>").appendTo("#BreweryHolder1");
-            var val = json.data[element];
-            $("<li><a href=''>" + val.id + "</a></li>").appendTo("#BreweryHolder1");
+            //var val = json.data[element];
+           // $("<li><a href=''>" + val.id + "</a></li>").appendTo("#BreweryHolder1");
         }
     });
 }
