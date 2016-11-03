@@ -55,8 +55,8 @@ function getJSON(filePath) {
 function getBreweries(filePath) {
     $.getJSON(filePath, function (json) {
         for (var element in json.data) {
-            var brewery = json.data[element];
-            $("<li><a href=''>" + brewery.id + "</a></li>").appendTo("#BreweryHolder1");
+            var val = json.data[element];
+            $("<li><a href=''>" + val.id + "</a></li>").appendTo("#BreweryHolder1");
         }
     });
 }
@@ -83,3 +83,4 @@ function searchAndNavToResults(parameter) {
 
 
 console.log("done in functions.js");
+
