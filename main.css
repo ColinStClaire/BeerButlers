@@ -37,6 +37,15 @@ section.content {
     background-color:#FFFFFF;
 }
 
+ul {
+    -moz-column-count: 4;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 4;
+    -webkit-column-gap: 20px;
+    column-count: 4;
+    column-gap: 20px;
+}
+
 #Header {
     padding: 1em;
     text-align: center;

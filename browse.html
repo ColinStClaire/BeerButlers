@@ -10,8 +10,12 @@
     <script src="js/main.js"></script>
     <script>
         $(document).ready(function() {
+            $(getBreweries('data/IPA.json'));
+            $(getBreweries('data/stout.json'));
+            $(getBreweries('data/porter.json'));
+            $(getBreweries('data/pilsner.json'));
 
-        })
+            })
     </script>
 </head>
 
@@ -26,16 +30,11 @@
 </div>
 
 <section>
-    <div id="Drink-Feature">
-        <h2>This is where the get a drink feature will go</h2>
-        <div id="BeerSearchContainer"><input id="BeerSearch">
-            <button id="search" type="button">Find my beer!</button>
-        </div>
-        <div id="BeerHolder1"></div>
-        <p>""</p>
-        <p>""</p>
-        <p>""</p>
-
+    <div id="browse">
+        <h2>Browse drinks</h2>
+        <ul>
+        <div id="BreweryHolder1"></div>
+        </ul>
     </div>
 
 </section>

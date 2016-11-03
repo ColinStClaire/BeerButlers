@@ -46,6 +46,24 @@ function getJSON(filePath) {
         }
     });
 }
+/*---------------------------------------------
+ Developer: Adriene Cranny
+ Function Name: getBreweries(filePath);
+ Description: Goes through every JSON file and gets all names
+ Modified: 11/03/16
+ ---------------------------------------------*/
+function getBreweries(filePath) {
+    $.getJSON(filePath, function (json) {
+        for (var element in json.data) {
+            var brewery = json.data[element];
+            $("<li><a href=''>" + brewery.id + "</a></li>").appendTo("#BreweryHolder1");
+        }
+    });
+}
+
+
+
+
 
 /*---------------------------------------------
  Developer: Colin St. Claire
