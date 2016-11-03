@@ -11,6 +11,7 @@ section{
     clear: both;
     overflow:hidden;
     background-color:#DDD;
+    border: solid black 2px;
 }
 
 ul {
@@ -46,7 +47,7 @@ section.content {
 
 }
 
-#BBReccomends{
+#BBReccomends {
     width: 35%;
     height: 450px;
     padding: 1em;
@@ -83,4 +84,8 @@ section.content {
 #Header h1 {
     font-family: 'Ultra', serif;
     font-size: 3em;
+}
+
+.beerSearchContainer img {
+
 }

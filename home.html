@@ -5,14 +5,13 @@
 <link rel="stylesheet" type="text/css" href="slideshow.css">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BeerButlers Home</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/functions.js"></script>
     <script src="js/main.js"></script>
     <script>
         var slideIndex = 0;
-        showSlides();
-
         function showSlides() {
             var i;
             var slides = document.getElementsByClassName("mySlides");
@@ -29,15 +28,15 @@
             dots[slideIndex-1].className += " active";
             setTimeout(showSlides, 2000); // Change image every 2 seconds
         }
+        showSlides();
     </script>
-
-
-
 </head>
 <body>
 <div id="Header">
+    <img src="data/butler.jpg" id="butlerLeft">
     <h1>Beer Butlers</h1>
     <h2>What can we get you?</h2>
+    <img src="data/butler.jpg" id="butlerRight">
 
 </div>
 
@@ -47,9 +46,8 @@
 
 <section>
     <div id="Drink-Feature">
-        <h2>This is where the get a drink feature will go</h2>
+        <h2>Search for your beer here!</h2>
         <div id="beerSearchContainerHome">
-
             <button id="searchButtonHome" type="button" onclick=window.open("results.html","_self");>Search for beer!</button>
         </div>
         <h2>Select a flavor profile and get a beer</h2>
@@ -59,8 +57,6 @@
             <option value="Creamy">Creamy</option>
             <option value="Hoppy">Hoppy</option>
         </select>
-
-
     </div>
 
     <div id="foodFeatureHome">
@@ -96,15 +92,15 @@
             <div class="text">Caption Three</div>
         </div>
 
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
     </div>
     <br>
 
     <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
     </div>
 </div>
 

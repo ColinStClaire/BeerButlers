@@ -1,4 +1,3 @@
-
 /**
  * Created by colinstclaire on 10/31/16.
  */
@@ -40,12 +39,15 @@ function getJSON(filePath) {
         for (var element in json.data) {
             var img = json.data[element].labels;
             if (typeof img !== 'undefined' && img) {
-                $("<img src='" + img.medium + "'>").appendTo("#beerHolderResults");
+                $("<div class='beerSearchContainer'><div><img src='" + img.medium + "'></div>" +
+                    "<span>Name:</span><br><span>Brewery:</span><br>" +
+                    "<span>Style:</span><br></div><br>").appendTo("#beerHolderResults");
             }
             //$("<p>" + element.name + "</p>").appendTo("#BeerHolder1");
         }
     });
 }
+
 /*---------------------------------------------
  Developer: Adriene Cranny
  Function Name: getAllBeers(filePath);
@@ -62,10 +64,6 @@ function getAllBeers(filePath) {
         }
     });
 }
-
-
-
-
 
 /*---------------------------------------------
  Developer: Colin St. Claire
