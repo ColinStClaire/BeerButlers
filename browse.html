@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <body>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Ultra" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="main.css">
 <head>
     <meta charset="UTF-8">
@@ -10,12 +11,11 @@
     <script src="js/main.js"></script>
     <script>
         $(document).ready(function() {
-            $(getBreweries('data/IPA.json'));
-            $(getBreweries('data/stout.json'));
-            $(getBreweries('data/porter.json'));
-            $(getBreweries('data/pilsner.json'));
-
-            })
+            getAllBeers('data/IPA.json');
+            getAllBeers('data/stout.json');
+            getAllBeers('data/porter.json');
+            getAllBeers('data/pilsner.json');
+        });
     </script>
 </head>
 

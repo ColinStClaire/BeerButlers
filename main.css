@@ -1,5 +1,5 @@
 body{
-    background-color:#000000;
+    background-color:#343434;
 }
 
 
@@ -10,31 +10,7 @@ section{
     float:left;
     clear: both;
     overflow:hidden;
-    background-color:#FFFFFF;
-}
-
-#FAQS{
-    padding: 1em;
-    overflow:auto;
-    background-color:#FFFFFF;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-
-}
-section.content {
-    flex: 1;
-}
-
-#BBReccomends{
-    width: 35%;
-    height: 450px;
-    padding: 1em;
-    margin-right: 3%;
-    margin-left: 15%;
-    border: solid black 2px;
-    overflow:hidden;
-    background-color:#FFFFFF;
+    background-color:#DDD;
 }
 
 ul {
@@ -46,15 +22,40 @@ ul {
     column-gap: 20px;
 }
 
+section.content {
+    flex: 1;
+}
+
+#FAQS{
+    padding: 1em;
+    overflow:auto;
+    background-color:#DDD;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+#BBReccomends{
+    width: 35%;
+    height: 450px;
+    padding: 1em;
+    margin-right: 3%;
+    margin-left: 15%;
+    border: solid black 2px;
+    overflow:hidden;
+    background-color:#DDD;
+}
+
 #Header {
     padding: 1em;
     text-align: center;
     clear: both;
-    background-color: #800000;
+    background-color: #fecf05;
 }
 #Nav-Bar{
     text-align: center;
-    background-color: #efefef;
+    background-color: #fecf05;
     clear: both;
 }
 
@@ -67,5 +68,9 @@ ul {
     background-color: #efefef;
     text-align: center;
     clear: both;
+}
 
+#Header h1 {
+    font-family: 'Ultra', serif;
+    font-size: 3em;
 }

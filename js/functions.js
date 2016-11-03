@@ -48,15 +48,15 @@ function getJSON(filePath) {
 }
 /*---------------------------------------------
  Developer: Adriene Cranny
- Function Name: getBreweries(filePath);
+ Function Name: getAllBeers(filePath);
  Description: Goes through every JSON file and gets all names
  Modified: 11/03/16
  ---------------------------------------------*/
-function getBreweries(filePath) {
+function getAllBeers(filePath) {
     $.getJSON(filePath, function (json) {
         for (var element in json.data) {
-            var brewery = json.data[element];
-            $("<li><a href=''>" + brewery.id + "</a></li>").appendTo("#BreweryHolder1");
+            var beer = json.data[element];
+            $("<li><a href=''>" + beer.name + "</a></li>").appendTo("#BreweryHolder1");
         }
     });
 }
