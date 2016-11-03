@@ -26,6 +26,16 @@ section.content {
     flex: 1;
 }
 
+#browse{
+    width: 100%;
+    padding: 1em;
+    margin-left: 3%;
+    float:left;
+    clear: both;
+    overflow:hidden;
+    background-color:#FFFFFF;
+
+}
 #FAQS{
     padding: 1em;
     overflow:auto;
