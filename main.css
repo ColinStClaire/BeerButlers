@@ -57,7 +57,7 @@ section.content {
     background-color:#DDD;
 }
 
-#Header {
+.Header {
     padding: 1em;
     text-align: center;
     clear: both;
@@ -97,13 +97,13 @@ section.content {
     clear: both;
 }
 
-#Header h1 {
+.Header h1 {
     font-family: 'Ultra', serif;
     font-size: 4em;
     text-decoration: underline;
 }
 
-#Header h2{
+.Header h2{
     font-size: 2.5em;
 }
 

@@ -11,11 +11,13 @@
     <script src="js/main.js"></script>
 </head>
 
-<div id="Header">
+<div class="Header">
+    <img src="data/butler.jpg" id="butlerLeft">
+    <img src="data/butler.jpg" id="butlerRight">
     <h1>Beer Butlers</h1>
     <h2>What can we get you?</h2>
-
 </div>
+
 
 <div id="Nav-Bar">
     <p><a href="home.html">Home</a> | <a href="browse.html">Browse drinks</a> | <a href="faq.html">FAQs</a> | <a href="articles.html">Beer Articles</a> | <a href = "contact.html"> Contact</a></p>
@@ -26,10 +28,10 @@
         <h2>Questions or suggestions can be emailed to the developers</h2>
         <p>We can insert a generic email form here</p>
         <?php
-$action=$_REQUEST['action'];
-if ($action=="")    /* display the contact form */
-    {
-    ?>
+            $action=$_REQUEST['action'];
+            if ($action=="")    /* display the contact form */
+            {
+         ?>
         <form  action="" method="POST" enctype="multipart/form-data">
             <input type="hidden" name="action" value="submit">
             Your name:<br>
