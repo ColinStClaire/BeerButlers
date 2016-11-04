@@ -34,14 +34,15 @@ function parseJSON(filePath) {
  the results page.
  Modified: 11/01/16
  ---------------------------------------------*/
-function getJSON(filePath) {
+function getJSON(filePath) { // need to change this to use $.ajax for error handling
     $.getJSON(filePath, function (json) {
+        $(".beerSearchContainer").empty();
         for (var element in json.data) {
             var img = json.data[element].labels;
             if (typeof img !== 'undefined' && img) {
-                $("<div class='beerSearchContainer'><div><img src='" + img.medium + "'></div>" +
+                $("<div class='beerSearchContainer'><div><br><img src='" + img.medium + "'></div>" +
                     "<span>Name:</span><br><span>Brewery:</span><br>" +
-                    "<span>Style:</span><br></div><br>").appendTo("#beerHolderResults");
+                    "<span>Style:</span><br></div>").appendTo("#beerHolderResults");
             }
             //$("<p>" + element.name + "</p>").appendTo("#BeerHolder1");
         }
