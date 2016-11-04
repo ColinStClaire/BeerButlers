@@ -5,7 +5,7 @@ body{
 
 section{
     width: 55%;
-    padding: 1em;
+    /*padding: 1em;*/
     margin-left: 3%;
     float:left;
     clear: both;
@@ -105,6 +105,30 @@ section.content {
 
 .Header h2{
     font-size: 2.5em;
+}
+
+#beerTops{
+    width: 100%;
+    margin: 0%;
+}
+
+#beerTops img{
+    width: 100%;
+    margin: 0%;
+    border-bottom:2px solid #000000;
+}
+
+#Drink-Feature{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.beerSearchContainerHome h2{
+    border-bottom:2px solid #761c19;
+}
+
+#foodFeatureHome h2{
+    border-bottom:2px solid #761c19;
 }
 
 .beerSearchContainer img {
