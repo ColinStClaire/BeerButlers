@@ -63,6 +63,21 @@ section.content {
     clear: both;
     background-color: #fecf05;
 }
+
+#butlerLeft{
+    padding: 1em;
+    width: 20%;
+    height: auto;
+    float: left;
+}
+
+#butlerRight{
+    padding: 1em;
+    width: 20%;
+    height: auto;
+    float: right;
+}
+
 #Nav-Bar{
     text-align: center;
     background-color: #fecf05;
