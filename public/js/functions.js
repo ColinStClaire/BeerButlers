@@ -28,13 +28,14 @@ function parseJSON(filePath) {
 
 /*---------------------------------------------
  Developer: Colin St. Claire
- Function Name: getJSON(filePath);
+ Function Name: getSearchResults(filePath);
  Description: The beginnings of the function that
  will parse our JSON files and append HTML to
  the results page.
  Modified: 11/01/16
  ---------------------------------------------*/
-function getJSON(filePath) { // need to change this to use $.ajax for error handling
+function getSearchResults(search) { // need to change this to use $.ajax for error handling
+    var filePath = '/beersearch/?q=' + search;
     $.getJSON(filePath, function (json) {
         $(".beerSearchContainer").empty();
         for (var element in json.data) {

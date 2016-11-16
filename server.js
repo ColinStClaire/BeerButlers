@@ -44,16 +44,18 @@ function processData(req) {
     return context;
 }
 
-/*app.get('/', function(req, res, next) { // request, response, next
-    var userInput = processData(req);
-    request("https://api.brewerydb.com/v2/search?key=3dad4576e0edfa7128dbb5831f6968b8&q=" + userInput.qParams[0].value, function (error, response, body) {
+app.get('/beersearch', function(req, res, next) { // request, response, next
+    console.log(req.query);
+    //var userInput = processData(req);
+    request("https://api.brewerydb.com/v2/search?key=3dad4576e0edfa7128dbb5831f6968b8&q=" + req.query.q, function (error, response, body) {
         if (!error && response.statusCode === 200) {
             console.log(body);
             res.send(body);
         }
     });
+    //res.end();
 });
-*/
+
 
 var port = process.env.PORT || 3000;
 

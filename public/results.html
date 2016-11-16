@@ -6,19 +6,19 @@
     <meta charset="UTF-8">
     <title>Results</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="public/js/functions.js"></script>
-    <script src="public/js/main.js"></script>
+    <script src="/js/functions.js"></script>
+    <script src="/js/main.js"></script>
     <script>
         $(document).ready(function() {
             $('#searchResultsButton').click(function() {
                 var val = $('#beerSearchResults').val();
-                getJSON('data/' + val + '.json');
+                getSearchResults(val);
             });
             $('#beerSearchResults').keydown(function(e) {
                 var key = e.which;
                 if(key == 13) {
                     var val = $('#beerSearchResults').val();
-                    getJSON('data/' + val + '.json');
+                    getSearchResults(val);
                 }
             });
         })
@@ -26,8 +26,8 @@
 </head>
 <body>
 <div class="Header">
-    <img src="data/butler.jpg" id="butlerLeft">
-    <img src="data/butler.jpg" id="butlerRight">
+    <img src="images/butler.jpg" id="butlerLeft">
+    <img src="images/butler.jpg" id="butlerRight">
     <h1>Beer Butlers</h1>
     <h2>What can we get you?</h2>
 </div>
