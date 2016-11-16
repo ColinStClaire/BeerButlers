@@ -7,8 +7,9 @@ var request = require('request');
 var app = express();
 var bodyParser = require('body-parser');
 
+
 app.use(bodyParser.json());
-app.set('port', 3000);
+//app.set('port', 3000);
 
 // all middleware needs to send() or next()
 
@@ -54,6 +55,9 @@ function processData(req) {
 });
 */
 
-app.listen(3000, function(){
-    console.log('Express started on port 3000; press Ctrl-C to terminate.');
+var port = process.env.PORT || 3000;
+
+
+app.listen(port, function(){
+    console.log('Express started on port ' + port +'; press Ctrl-C to terminate.');
 });
