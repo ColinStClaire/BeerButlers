@@ -13,7 +13,7 @@ app.set('port', 3000);
 // all middleware needs to send() or next()
 
 
-app.use(function (req, res, next) {
+/*app.use(function (req, res, next) {
     console.log(req.URL);
     // Website sending requests
     res.setHeader('Access-Control-Allow-Origin', 'http://52.40.59.238');
@@ -26,6 +26,9 @@ app.use(function (req, res, next) {
     // Proceed to the next layer of middleware
     next();
 });
+*/
+
+app.use(express.static('public'));
 
 function processData(req) {
     var context = {};
@@ -40,7 +43,7 @@ function processData(req) {
     return context;
 }
 
-app.get('/', function(req, res, next) { // request, response, next
+/*app.get('/', function(req, res, next) { // request, response, next
     var userInput = processData(req);
     request("https://api.brewerydb.com/v2/search?key=3dad4576e0edfa7128dbb5831f6968b8&q=" + userInput.qParams[0].value, function (error, response, body) {
         if (!error && response.statusCode === 200) {
@@ -49,8 +52,8 @@ app.get('/', function(req, res, next) { // request, response, next
         }
     });
 });
+*/
 
-
-app.listen(app.get('port'), function(){
-    console.log('Express started on port' + app.get('port') + '; press Ctrl-C to terminate.');
+app.listen(3000, function(){
+    console.log('Express started on port 3000; press Ctrl-C to terminate.');
 });
