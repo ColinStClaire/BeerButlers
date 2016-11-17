@@ -68,7 +68,7 @@ section.content {
 #butlerLeft{
     padding: 1em;
     width: 20%;
-    height: auto;
+    height: auto%;
     float: left;
 }
 
