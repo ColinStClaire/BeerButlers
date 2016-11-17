@@ -65,10 +65,17 @@ section.content {
     overflow: hidden;
 }
 
+#article2{
+    padding: 1em;
+    width: 50%;
+    height: auto;
+    float: right;
+}
+
 #butlerLeft{
     padding: 1em;
     width: 20%;
-    height: auto%;
+    height: auto;
     float: left;
 }
 

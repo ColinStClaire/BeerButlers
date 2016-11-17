@@ -56,7 +56,8 @@ function getSearchResults(search) { // need to change this to use $.ajax for err
  Description: Goes through every JSON file and gets all names
  Modified: 11/03/16
  ---------------------------------------------*/
-function getAllBeers(filePath) {
+function getAllBeers(search) {
+    var filePath ='/beersearch/?q=' + search;
     $.getJSON(filePath, function (json) {
         for (var element in json.data) {
             var beer = json.data[element];
