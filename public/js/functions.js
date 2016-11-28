@@ -77,7 +77,7 @@ function getBrewery(beerId) {
     */
     $.getJSON(filePath, function (json) {
         brewery = json.data[0].name;
-        alert(brewery);
+        //alert(brewery);
         success: return brewery;
     });
 }
