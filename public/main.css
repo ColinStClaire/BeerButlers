@@ -1,5 +1,7 @@
 body{
+
     background-color:#343434;
+    background-image: url("/images/woodbackground.jpg");
 }
 
 
@@ -44,6 +46,7 @@ section.content {
     flex-direction: column;
     min-height: 100vh;
 
+
 }
 
 #BBReccomends {
@@ -58,11 +61,22 @@ section.content {
 }
 
 .Header {
-    padding: 1em;
+
     text-align: center;
     clear: both;
-    background-color: #fecf05;
+    background-image: url("/images/beer-background.jpg");
+    background: #732d15; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#3b1d11,#732d15, #fecf05); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#3b1d11, #732d15, #fecf05); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#3b1d11, #732d15, #fecf05); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#3b1d11, #732d15, #fecf05); /* Standard syntax */
     overflow: hidden;
+}
+
+#beerimage{
+    width: 75%;
+    height: 75%;
+    margin: 0%;
 }
 
 #article2{
@@ -73,14 +87,14 @@ section.content {
 }
 
 #butlerLeft{
-    padding: 1em;
+
     width: 20%;
     height: auto;
     float: left;
 }
 
 #butlerRight{
-    padding: 1em;
+
     width: 20%;
     height: auto;
     float: right;
@@ -94,6 +108,8 @@ section.content {
 }
 
 #footer{
+    background-image: url("/images/beer-background.jpg");
+    
     position: relative;
     right: 0;
     bottom: 0;
