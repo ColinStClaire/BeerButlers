@@ -1,6 +1,9 @@
 /**
  * Created by colinstclaire on 10/31/16.
  */
+$.ajaxSetup({
+    async: false
+});
 /*---------------------------------------------
  Developer: Colin St. Claire
  Function Name: parseJSON(filePath);
@@ -37,17 +40,50 @@ function parseJSON(filePath) {
 function getSearchResults(search) { // need to change this to use $.ajax for error handling
     var filePath = '/beersearch/?q=' + search;
     $.getJSON(filePath, function (json) {
+        // clears previous search results
         $(".beerSearchContainer").empty();
         for (var element in json.data) {
             var img = json.data[element].labels;
+            var beerId = json.data[element].id;
+            var beerName = json.data[element].name;
+            var brewery = getBrewery(beerId);
+            //var style = json.data[element].style.shortName;
+            //var href = "http://google.com/search?q=" + brewery + "+" + beerName + "+" + style;
+
+            console.log("beerId: " + beerId);
+            //console.log("brewery: " + brewery);
+            //alert(brewery);
             if (typeof img !== 'undefined' && img) {
-                $("<div class='beerSearchContainer'><div><br><img src='" + img.medium + "'></div>" +
-                    "<span>Name:</span><br><span>Brewery:</span><br>" +
-                    "<span>Style:</span><br></div>").appendTo("#beerHolderResults");
+                $("<div class='beerSearchContainer'><div><br><a href="+""+"><img src=" + img.medium + "></a></div>" +
+                    "<span>Name: " + beerName + "</span><br><span>Brewery: "+ brewery +"</span><br>" +
+                    "<span>Style: " + json.data[element].style.shortName + "</span><br></div>").appendTo("#beerHolderResults");
             }
-            //$("<p>" + element.name + "</p>").appendTo("#BeerHolder1");
         }
     });
+}
+
+function getBrewery(beerId) {
+    var filePath = "/brewerysearch/?q=" + beerId;
+    var brewery = "Not found";
+    /*$.ajax({
+       url: filePath,
+       async: false,
+       dataType: 'json',
+       complete: function(json) {
+           brewery = json.data[0].name;
+       }
+    });
+    return brewery;
+    */
+    $.getJSON(filePath, function (json) {
+        brewery = json.data[0].name;
+        alert(brewery);
+        success: return brewery;
+    });
+}
+
+function returnBrewery(brewery) {
+    return brewery;
 }
 
 /*---------------------------------------------

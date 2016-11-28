@@ -44,12 +44,28 @@ function processData(req) {
     return context;
 }
 
+//Total API requests per search is 1 + number of elements displayed.
+app.get('/brewerysearch', function(req, res, next) { // request, response, next
+    console.log(req.query);
+    //var userInput = processData(req);
+    request("https://api.brewerydb.com/v2/beer/"+req.query.q+"/breweries?key=3dad4576e0edfa7128dbb5831f6968b8",
+        function (error, response, body) {
+        if (!error && response.statusCode === 200) {
+            //console.log("brewerysearch" + body);
+            res.send(body);
+        }
+    });
+});
+
+
+
 app.get('/beersearch', function(req, res, next) { // request, response, next
     console.log(req.query);
     //var userInput = processData(req);
-    request("https://api.brewerydb.com/v2/search?key=3dad4576e0edfa7128dbb5831f6968b8&q=" + req.query.q, function (error, response, body) {
+    request("https://api.brewerydb.com/v2/search?key=3dad4576e0edfa7128dbb5831f6968b8&q=" +
+        req.query.q, function (error, response, body) {
         if (!error && response.statusCode === 200) {
-            console.log(body);
+            //console.log(body);
             res.send(body);
         }
     });
