@@ -55,11 +55,20 @@ function getSearchResults(search) { // need to change this to use $.ajax for err
             //console.log("brewery: " + brewery);
             //alert(brewery);
             if (typeof img !== 'undefined' && img) {
+                $("<div class='beerSearchContainer'><div><br><img src='" + img.medium + "'></div>" +
+                    "<span>Name:</span><br><span>Brewery:</span><br>" +
+                    "<span>Style:</span><br></div>").appendTo("#beerHolderResults");
+                $("<div class='beerSearchContainer'><div><br><a href="+""+"><img src=" + img.medium + "></a></div>" +
+                    "<span>Name: " + beerName + "</span><br><span>Brewery: "+ brewery +"</span><br>" +
+                    "<span>Style: " + json.data[element].style.shortName + "</span><br></div>").appendTo("#beerHolderResults");
+            }
+            
+            /*if (typeof img !== 'undefined' && img) {
                 returnValue = "<div class='beerSearchContainer'><div><br><a href="+""+"><img src=" + img.medium + "></a></div>" +
                     "<span>Name: " + beerName + "</span><br><span>Brewery: "+ brewery +"</span><br>" +
                     "<span>Style: " + json.data[element].style.shortName + "</span><br></div>";
                 $(returnValue).appendTo("#beerHolderResults");
-            }
+            }*/
         }
     }).fail(function(d) {
         alert('Server failure. Please try again later!');
