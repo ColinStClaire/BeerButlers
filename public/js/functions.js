@@ -39,7 +39,6 @@ function parseJSON(filePath) {
  ---------------------------------------------*/
 function getSearchResults(search) { // need to change this to use $.ajax for error handling
     var filePath = '/beersearch/?q=' + search;
-    var returnValue = "";
     $.getJSON(filePath, function (json) {
         // clears previous search results
         $(".beerSearchContainer").empty();
@@ -47,7 +46,7 @@ function getSearchResults(search) { // need to change this to use $.ajax for err
             var img = json.data[element].labels;
             var beerId = json.data[element].id;
             var beerName = json.data[element].name;
-            //var brewery = getBrewery(beerId);
+            var brewery = getBrewery(beerId);
             //var style = json.data[element].style.shortName;
             //var href = "http://google.com/search?q=" + brewery + "+" + beerName + "+" + style;
 
@@ -62,18 +61,9 @@ function getSearchResults(search) { // need to change this to use $.ajax for err
                     "<span>Name: " + beerName + "</span><br><span>Brewery: "+ brewery +"</span><br>" +
                     "<span>Style: " + json.data[element].style.shortName + "</span><br></div>").appendTo("#beerHolderResults");
             }
-            
-            /*if (typeof img !== 'undefined' && img) {
-                returnValue = "<div class='beerSearchContainer'><div><br><a href="+""+"><img src=" + img.medium + "></a></div>" +
-                    "<span>Name: " + beerName + "</span><br><span>Brewery: "+ brewery +"</span><br>" +
-                    "<span>Style: " + json.data[element].style.shortName + "</span><br></div>";
-                $(returnValue).appendTo("#beerHolderResults");
-            }*/
+            //$("<p>" + element.name + "</p>").appendTo("#BeerHolder1");
         }
-    }).fail(function(d) {
-        alert('Server failure. Please try again later!');
     });
-    return returnValue;
 }
 
 function getBrewery(beerId) {

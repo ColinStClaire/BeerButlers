@@ -6,13 +6,15 @@ body{
 
 
 section{
-    width: 45%;
+    width: 55%;
+    min-height: 500px;
     /*padding: 1em;*/
     margin-left: 3%;
+    margin-right: 3%;
     float:left;
     clear: both;
     overflow:hidden;
-    background-color:#DDD;
+    background-color: #f2f6f2;
     border: solid black 2px;
 }
 
@@ -50,19 +52,32 @@ section.content {
 }
 
 #banner-load img{
-    width: 50%;
+    width: 75%;
     height: auto;
+    -moz-animation-duration: autos;
+    -o-animation-duration: autos;
+    animation-duration: autos;%;
+    border: 1px solid;
+    display: block;
+    margin: auto;
+    opacity: 1.0;
+}
+
+#banner-load{
+
 }
 
 #BBReccomends {
-    width: 45%;
-    height: 580px;
+    width: 32%;
+    min-height: 500px;
     padding: 1em;
     margin-right: 3%;
-    margin-left: 15%;
     border: solid black 2px;
+    opacity: .85;
+    color: darkgoldenrod;
     overflow:hidden;
-    background-color:#DDD;
+    background-color: #000000;
+    text-align: center;
 }
 
 #header{
@@ -87,12 +102,7 @@ section.content {
     margin: 0%;
 }
 
-#article2{
-    padding: 1em;
-    width: 50%;
-    height: auto;
-    float: right;
-}
+
 
 #butlerLeft{
     padding: 1em;
@@ -129,8 +139,13 @@ section.content {
     left: 0;
     padding: 1rem;
     background-color: #efefef;
+    opacity: 0.85;
     text-align: center;
     clear: both;
+}
+#footer a{
+    opacity: 1.0;
+    color: darkgoldenrod;
 }
 
 .Header h1 {
@@ -155,12 +170,38 @@ section.content {
 }
 
 #Drink-Feature{
+    margin-left: 5%;
+}
+
+#Drink-Feature li{
+    float: left;
+    display: inline;
+}
+
+#Drink-Feature ul{
+    list-style: none;
+    padding: 1em;
+}
+
+#article1{
+    float: left;
+}
+
+#article2{
+    padding: 1em;
+    width: 50%;
+    height: auto;
+}
+
+#search-container{
+    min-height: 500px;
     margin-left: 10%;
     margin-right: 10%;
 }
 
 .beerSearchContainerHome h2{
     border-bottom:2px solid #761c19;
+
 }
 
 #foodFeatureHome h2{

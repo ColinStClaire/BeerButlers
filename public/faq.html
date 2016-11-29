@@ -34,9 +34,8 @@
 
 
 <section>
-    <div id="FAQS">
+    <div id="Drink-Feature">
 
-    <section class="content">
         <h2>FAQs about Beer</h2>
         <h3> Define Beer</h3>
         <p>    Q: What exactly is beer?</p>
@@ -57,14 +56,32 @@
         </p><p>    A: Beer is a fermented beverage. It isn't spoiled. Fermentation is a chemical processes where sugars are converted into carbon dioxide and alcohol. Fermentation works in an anaerobic environment where there's no air but carbohydrates such as sugar. In order for beer to contain alcohol it must be fermented. There are processes that can remove alcohol after fermentation but it must first be fermented in order for it to be beer regardless if it contains alcohol or not.
     </p>
 
-    </section>
     </div>
 
 </section>
 
 
+<div id="BBReccomends">
+
+    <h1>Try one of these!</h1>
+    <div id="banner-load"></div>
+
+    <!--Don't forget Jquery-->
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js'></script>
+
+    <!--New images on load -->
+    <script>
+        //Add your images, we'll set the path in the next step
+        var images = ['adriene1.jpg', 'collin1.jpg', 'ryan1.jpg', 'collin2.jpg', 'ryan2.jpg','adriene3.jpg', 'collin3.jpg', 'ryan3.jpg'];
+
+        //Build the img, then do a bit of maths to randomize load and append to a div. Add a touch off css to fade them badboys in all sexy like.
+        $('<img class="fade-in" src="images/recommend/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#banner-load');
+    </script>
+</div>
+
+
 <div id="footer">
-    <p><a href="index.html">Home</a> | <a href="browse.html">Browse drinks</a> | <a href="faq.html">FAQs</a> | <a href="articles.html">Beer Articles</a> | <a href = "contact.html"> Contact</a></p>
+    <p><a href="index.html">Home</a> | <a href="results.html">Search</a> | <a href="faq.html">FAQs</a> | <a href="articles.html">Beer Articles</a> | <a href = "contact.html"> Contact</a></p>
 
 </div>
 
