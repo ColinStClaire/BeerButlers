@@ -46,7 +46,7 @@ function getSearchResults(search) { // need to change this to use $.ajax for err
             var img = json.data[element].labels;
             var beerId = json.data[element].id;
             var beerName = json.data[element].name;
-            var brewery = getBrewery(beerId);
+            var brewery = "Not found";//getBrewery(beerId);
             //var style = json.data[element].style.shortName;
             //var href = "http://google.com/search?q=" + brewery + "+" + beerName + "+" + style;
 
@@ -54,9 +54,6 @@ function getSearchResults(search) { // need to change this to use $.ajax for err
             //console.log("brewery: " + brewery);
             //alert(brewery);
             if (typeof img !== 'undefined' && img) {
-                $("<div class='beerSearchContainer'><div><br><img src='" + img.medium + "'></div>" +
-                    "<span>Name:</span><br><span>Brewery:</span><br>" +
-                    "<span>Style:</span><br></div>").appendTo("#beerHolderResults");
                 $("<div class='beerSearchContainer'><div><br><a href="+""+"><img src=" + img.medium + "></a></div>" +
                     "<span>Name: " + beerName + "</span><br><span>Brewery: "+ brewery +"</span><br>" +
                     "<span>Style: " + json.data[element].style.shortName + "</span><br></div>").appendTo("#beerHolderResults");
@@ -67,7 +64,7 @@ function getSearchResults(search) { // need to change this to use $.ajax for err
 }
 
 function getBrewery(beerId) {
-    var filePath = "/brewerysearch/?q=" + beerId;
+    var filePath = "/brewerysearch/";
     var brewery = "Not found";
     /*$.ajax({
        url: filePath,
