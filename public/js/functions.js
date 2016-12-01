@@ -128,9 +128,9 @@ function flavorResult(selection) {
     //Roasty
     //Hipster
     var divId = "#flavorResults";
-    var malty = ["malt"];
+    var malty = ["bock"];
     var hoppy = ["ipa"];
-    var clean =["ale"];
+    var clean =["pilsner"];
     var roasty = ["stout"];
     var hipster = ["pabst"];
     switch(selection) {
