@@ -20,6 +20,18 @@
             });
         });
     </script>
+
+
+    <script>
+        $(document).ready(function(){
+            $('#flavorButton').click(function() {
+                var selectedVal = $('#flavorOptions option:selected').text().toString();
+                //alert("Selected Value = " + selectedVal);
+                flavorResult(selectedVal);
+                //getSearchResults(selectedVal, "#foodResults");
+            });
+        });
+    </script>
 </head>
 <body>
 
@@ -59,7 +71,7 @@
             <h4>If you're not 21 or over, here's a more <a href="http://disneychannel.disney.com/">appropriate site for you.</a></h4>
             <br>
         <h2>Select a flavor profile:</h2>
-        <select>
+        <select id="flavorOptions">
             <option value="default">Pick a flavor</option>
             <option value="Malty">Malty</option>
             <option value="Hoppy">Hoppy</option>
@@ -68,6 +80,7 @@
             <option value="Hipster">Hipster</option>
         </select>
         <button id="flavorButton" type="button">Get beer!</button>
+            <div id="flavorResults"></div>
         <br>
         <br>
     </div>

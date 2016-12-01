@@ -121,3 +121,42 @@ function foodResult(selection) {
     }
 }
 
+function flavorResult(selection) {
+    //Malty
+    //Hoppy
+    //Clean
+    //Roasty
+    //Hipster
+    var divId = "#flavorResults";
+    var malty = ["malt"];
+    var hoppy = ["ipa"];
+    var clean =["ale"];
+    var roasty = ["stout"];
+    var hipster = ["pabst"];
+    switch(selection) {
+        /* todo make an object of suitable beer search strings for each food type and search a random one
+
+         */
+        case "Malty":
+            getSearchResults(malty[0], divId);
+            break;
+        case "Hoppy":
+
+            getSearchResults(hoppy[0], divId);
+            break;
+        case "Clean":
+
+            getSearchResults(clean[0], divId);
+            break;
+        case "Roasty":
+
+            getSearchResults(roasty[0], divId);
+            break;
+        case "Hipster":
+
+            getSearchResults(hipster[0], divId);
+            break;
+        default:
+            break;
+    }
+}
