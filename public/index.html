@@ -11,24 +11,14 @@
     <script src="/js/functions.js"></script>
     <script src="/js/main.js"></script>
     <script>
-        var slideIndex = 0;
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex> slides.length) {slideIndex = 1}
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-        showSlides();
+        $(document).ready(function(){
+            $('#foodButton').click(function() {
+                var selectedVal = $('#foodOptions option:selected').text().toString();
+                //alert("Selected Value = " + selectedVal);
+                foodResult(selectedVal);
+                //getSearchResults(selectedVal, "#foodResults");
+            });
+        });
     </script>
 </head>
 <body>
@@ -67,34 +57,34 @@
             <p>Stay tuned for future developments.</p>
             <h3>Always remember don't drink and drive! It's also highly recommended not to web browse and drive</h3>
             <h4>If you're not 21 or over, here's a more <a href="http://disneychannel.disney.com/">appropriate site for you.</a></h4>
-
-            <br>
             <br>
         <h2>Select a flavor profile:</h2>
         <select>
-            <option value="Sweet">Sweet</option>
-            <option value="Bitter">Bitter</option>
-            <option value="Creamy">Creamy</option>
+            <option value="default">Pick a flavor</option>
+            <option value="Malty">Malty</option>
             <option value="Hoppy">Hoppy</option>
+            <option value="Clean">Clean</option>
+            <option value="Roasty">Roasty</option>
+            <option value="Hipster">Hipster</option>
         </select>
-
-
+        <button id="flavorButton" type="button">Get beer!</button>
         <br>
         <br>
-        <br>
-
     </div>
 
     <div id="foodFeatureHome">
         <h2>Select a food category:</h2>
-        <select>
+        <select id="foodOptions">
+            <option value="default">Pick a food type</option>
             <option value="Chicken/Poultry">Chicken/Poultry</option>
             <option value="Beef/Pork">Beef/Pork</option>
             <option value="Desserts">Desserts</option>
             <option value="Vegetables">Vegetables</option>
             <option value="Salads">Salads</option>
         </select>
+        <button id="foodButton" type="button">Get beer!</button>
     </div>
+    <div id="foodResults"></div>
     <br>
     <br>
 
@@ -122,7 +112,8 @@
 
 
 <div id="footer">
-    <p><a href="index.html">Home</a> | <a href="results.html">Search</a> | <a href="faq.html">FAQs</a> | <a href="articles.html">Beer Articles</a> | <a href = "contact.html"> Contact</a></p>
+    <p><a href="index.html">Home</a> | <a href="results.html">Search</a> | <a href="faq.html">FAQs</a> | <a href="articles.html">Beer Articles</a>
+        | <a href = "contact.html"> Contact</a></p>
 
 </div>
 
