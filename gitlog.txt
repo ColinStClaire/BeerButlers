@@ -1,0 +1,414 @@
+commit 2454acc5c28d6aa74d4d942d8f5067bd59b2c957
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Thu Dec 1 13:47:45 2016 -0800
+
+    simplified search terms
+
+commit 6221c7f4c5413ba22f163f489fce21309592c548
+Author:  <adriene.n.shanders@gmail.com>
+Date:   Thu Dec 1 10:50:53 2016 -0800
+
+    Final flavor feature implemented.
+
+commit 11bff542140dc7e3c2cebe7900e2df75020112ae
+Merge: be79f1f 5b8642c
+Author:  <adriene.n.shanders@gmail.com>
+Date:   Thu Dec 1 10:36:32 2016 -0800
+
+    Merge branch 'master' of https://gitlab.encs.vancouver.wsu.edu/colin/BeerButlers
+    
+    Merge - implemented features
+
+commit be79f1fe65dc4fa55f8a67ad39a7dc630fb38059
+Author:  <adriene.n.shanders@gmail.com>
+Date:   Thu Dec 1 10:35:57 2016 -0800
+
+    Fixed button.
+
+commit 5b8642cbf31928f8164b5948b3bf1e2537738657
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Wed Nov 30 15:09:57 2016 -0800
+
+    Fixed brewery labels and started working on food beer results
+
+commit cd5491f8b42fbab22380b48f39c6c8bdd9651dca
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Tue Nov 29 14:08:50 2016 -0800
+
+    Fixed duplicate code
+
+commit 132ab7871c038a6519d184d388f8e9015c3e9ba9
+Author:  <adriene.n.shanders@gmail.com>
+Date:   Tue Nov 29 12:03:43 2016 -0800
+
+    Fixed functions.js for search results. Improved layout on all pages.
+
+commit eddc5e64011cbc9e3f4dfd1804a18a1424f829db
+Author:  <adriene.n.shanders@gmail.com>
+Date:   Tue Nov 29 10:44:02 2016 -0800
+
+    Fixed function. We get beers again.
+
+commit fc79e27d0e140f90325d4c148326ce06bde41213
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Mon Nov 28 14:06:05 2016 -0800
+
+    testing
+
+commit fd28932beae9317245280131ec140763bfa574df
+Author:  <adriene.n.shanders@gmail.com>
+Date:   Mon Nov 28 14:04:17 2016 -0800
+
+    More CS alterations. The page is looking pretty.
+
+commit de9e7d453b22a8a5ff09a2f86a086a3f46646b88
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Mon Nov 28 11:14:19 2016 -0800
+
+    Branch testing...
+
+commit 44a473e1b1ce1da33e48a2dbd8caa6ebc61c6dbc
+Author:  <adriene.n.shanders@gmail.com>
+Date:   Mon Nov 28 11:07:50 2016 -0800
+
+    Altering header.
+
+commit 8699ad9b105d3477ad347b3ca34bef439f3de6eb
+Merge: 0e1cb91 c2bae68
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Sun Nov 27 22:51:15 2016 -0800
+
+    Merge branch 'master' of gitlab.encs.vancouver.wsu.edu:colin/BeerButlers
+
+commit 0e1cb9189dbd6a97325d02b6b31c395841b12379
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Sun Nov 27 22:51:00 2016 -0800
+
+    added name and style
+
+commit c2bae682f2f4759f89a37223f2eb7c96b5c1dedd
+Merge: 9bf0653 be6ae4e
+Author:  <adriene.n.shanders@gmail.com>
+Date:   Sun Nov 27 21:05:18 2016 -0800
+
+    Merge branch 'master' of https://gitlab.encs.vancouver.wsu.edu/colin/BeerButlers
+
+commit 9bf0653ffabbb9e65bde7b1492f15f22928fb7c7
+Author:  <adriene.n.shanders@gmail.com>
+Date:   Sun Nov 27 21:04:27 2016 -0800
+
+    Adding new background image. Adding TestReport.docx
+
+commit be6ae4e25014e8ffb584d2ef3d9ef4259d323892
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Thu Nov 17 13:27:58 2016 -0800
+
+    renamed jpg
+
+commit 926adfd473de3485abcc2ee3336a24b0e7b63c38
+Author:  <adriene.n.shanders@gmail.com>
+Date:   Thu Nov 17 12:15:42 2016 -0800
+
+    Adriene Cranny: Fixed broken images, fixed browse drinks, added another beer article.
+
+commit b1a252d3bfe728f88fada4ccc59c8c202f731bb6
+Author:  <adriene.n.shanders@gmail.com>
+Date:   Thu Nov 17 11:59:06 2016 -0800
+
+    Adriene Cranny: Updated logo
+
+commit 27667631915472054a462d08ea8f7f69196b709b
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Wed Nov 16 13:23:56 2016 -0800
+
+    Implemented actually using BreweryDB API
+
+commit 839572d2de9ba09c2756ba503d295560526ac2cd
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Wed Nov 16 12:50:35 2016 -0800
+
+    configurated server.js
+
+commit d516eaca2034786a313bc12d0dbdb8c3c7f77e6b
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Wed Nov 16 12:39:05 2016 -0800
+
+    restructure project directories, setup node.js PROPERLY
+
+commit e7c0cdf3f7cae29aee836fdc62af33f2d31fc868
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Wed Nov 16 12:08:55 2016 -0800
+
+    Colin St. Claire - Removed node_modules for re-installation
+
+commit a30b5259a490a175ba97dd7f7da01ba993c0acbc
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Wed Nov 16 12:03:19 2016 -0800
+
+    Colin St. Claire - Removed node_modules for re-installation
+
+commit ec6a292fa1f7fafa578c8bcbc750b1eca8559352
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Wed Nov 16 11:52:55 2016 -0800
+
+    -Colin St. Claire - Added more items to .gitignore and added data/beer.png
+
+commit d9631e19244838c20c6db9766812b0e01cf64364
+Author: Ryan Miller <ryan.d.miller@wsu.edu>
+Date:   Fri Nov 4 14:02:52 2016 -0700
+
+    Added images and improved style and look of web page.
+
+commit 0e4e5c4a496d9d5dda85ad0ba144199cbb420630
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Fri Nov 4 13:13:57 2016 -0700
+
+    imgages missing from pages
+
+commit a81e58d87427f17d36fbc1d20b6034fc505b33a8
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Fri Nov 4 12:58:05 2016 -0700
+
+    getJSON clears old search results before displaying new search results
+
+commit d87a235241f73ae118d07e7f1427eccd16ddd0df
+Author: Ryan Miller <ryan.d.miller@wsu.edu>
+Date:   Fri Nov 4 12:34:28 2016 -0700
+
+    Edited header layout and style
+
+commit e93e73c074f359824c903cffb95064d79429dc32
+Author: Ryan Miller <ryan.d.miller@wsu.edu>
+Date:   Fri Nov 4 11:46:18 2016 -0700
+
+    Made search bar event activate on a press of the enter key
+
+commit 5b9cc31e3699a15c77beba5e32f47138f95e8f51
+Author: Ryan Miller <ryan.d.miller@wsu.edu>
+Date:   Fri Nov 4 11:30:25 2016 -0700
+
+    Fixed logo placement and size in the home header.
+
+commit 47b1c4f1c48740d935231d6dca8377bf1706ec0d
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Thu Nov 3 16:28:10 2016 -0700
+
+    changed link
+
+commit 98d3b0647b6c494d9a8338dbd3e6fe24b78f6fd4
+Merge: e7fb413 880b7bc
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Thu Nov 3 16:24:44 2016 -0700
+
+    screwed up
+
+commit e7fb413e19332fdb4d9efe5539248d21dd6676a5
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Thu Nov 3 16:23:07 2016 -0700
+
+    added text fields to result images and wrapped them in divs
+
+commit 880b7bce6df8fef500ccbf23f500749b14902d16
+Author:  <adriene.n.shanders@gmail.com>
+Date:   Thu Nov 3 16:18:27 2016 -0700
+
+    Changed up article.html and fixed some things Colin broke.
+
+commit 464c3462c7da2b56fa6406548a3eea4cf9a5bfce
+Merge: d85bebf d79a45e
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Thu Nov 3 15:37:12 2016 -0700
+
+    Merge issue with js/functions.js
+
+commit d85bebff15f895ce2e26179ce3a4f39b2bc62907
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Thu Nov 3 15:35:12 2016 -0700
+
+    Made some color scheme changes
+
+commit d79a45ed146362271a164c1b64d1729f6910a81e
+Author:  <adriene.n.shanders@gmail.com>
+Date:   Thu Nov 3 15:33:11 2016 -0700
+
+    Adriene - Added slideshow.css and slideshow to main. Not working yet. Images won't show but animation is there. Added function1 and 2 to home.
+
+commit b4d63ea82069293a6cd0a8ee8d999f3ea55637f3
+Author:  <adriene.n.shanders@gmail.com>
+Date:   Thu Nov 3 08:42:15 2016 -0700
+
+    Created JS function to get elements in each JSON file and append to Browse Page.
+
+commit 7e329cafb6789b31da9011933eb9c6fad6c22edd
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Wed Nov 2 15:11:13 2016 -0700
+
+    New results.html page opens from home.html
+
+commit d4a2f9f75ee8e5dcd35a4bb2bb910f99b26823e8
+Author: Ryan Miller <ryan.d.miller@wsu.edu>
+Date:   Wed Nov 2 14:03:06 2016 -0700
+
+    Added README.txt file
+
+commit 5bbc759a25b0c0786bbdad82d5f12145fe2dd84a
+Author:  <adriene.n.shanders@gmail.com>
+Date:   Wed Nov 2 14:00:49 2016 -0700
+
+    Fixed footer, created results.html, homepage now returns a results page.
+
+commit 0bb41592363db674b916ede936d801375aba85bc
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Wed Nov 2 13:37:17 2016 -0700
+
+    Fixed our lost JS functions (STUPID GIT)
+
+commit 186e073b2f6af13868ce7bca931c1d6de8bdc3c8
+Merge: 55adeac fb49c45
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Wed Nov 2 13:22:25 2016 -0700
+
+    STUPID
+
+commit 55adeac81677df409016574133cada815d595272
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Wed Nov 2 12:59:01 2016 -0700
+
+    Added more json data, reformatted them, and made a JS conditional that allows skipping over items with no image links
+
+commit fb49c45768a2461e75179ba9fdf111ce486b3272
+Author:  <adriene.n.shanders@gmail.com>
+Date:   Wed Nov 2 11:31:46 2016 -0700
+
+    Fixing some files.
+
+commit 15c074d768567ca1b8cd40e5de046ef86b7f9f43
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Wed Nov 2 11:29:45 2016 -0700
+
+    removed .idea files accidentally added to git
+
+commit e2e53430217cb84eef1761602aaaa7c1437c51c8
+Author: Adriene <adriene.n.shanders@gmail.com>
+Date:   Wed Nov 2 11:09:54 2016 -0700
+
+    -Adriene Cranny - Added more content to the FAQS. CSS needs work.
+
+commit 061393d1d2aa3f84fcda4ce89a5a853958cf7870
+Merge: 4d657ab ec00852
+Author: Adriene <adriene.n.shanders@gmail.com>
+Date:   Wed Nov 2 11:09:19 2016 -0700
+
+    Merge remote-tracking branch 'origin/master'
+
+commit ec00852c80f42ff428f95f48f49c295d2658b434
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Wed Nov 2 11:08:46 2016 -0700
+
+    adding error handling for non-existant json elements
+
+commit 4d657ab0191ccc3a0fe710e9308a9ed5fedc848a
+Author: Adriene <adriene.n.shanders@gmail.com>
+Date:   Wed Nov 2 10:40:42 2016 -0700
+
+    -Adriene Cranny - Added contact form to Contact.html. Doesn't send the email yet.
+
+commit ed10002fce8b9d4e471339d0976c46f9337702cf
+Author: Adriene <adriene.n.shanders@gmail.com>
+Date:   Wed Nov 2 10:21:37 2016 -0700
+
+    -Adriene Cranny - Added html docs for each page
+
+commit f044ccdca4b71e4d88f3ed53cb55a33b4b19aac0
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Tue Nov 1 16:32:55 2016 -0700
+
+    ADRIENE: Started appending data to html elements
+
+commit 8b4f35ba54894a8ec4b977ddf7c681eaedb95dd7
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Tue Nov 1 15:33:45 2016 -0700
+
+    added local JSON files for testing
+
+commit a2e6f0ac7db938399885ac06dc6ef1c76c62a349
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Fri Oct 28 16:05:16 2016 -0700
+
+    Post Thomas meeting add
+
+commit 6d6db2321162b0f526e213111bd74e1cdc8df010
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Wed Oct 26 14:46:26 2016 -0700
+
+    added node_modules/express
+
+commit 13a2d679d5727695f218b9a1a2c26d03fcd636e7
+Author: Ryan Dale Miller <ryan.d.miller@wsu.edu>
+Date:   Wed Oct 26 13:08:30 2016 -0700
+
+    Added Full SDD documentation
+
+commit 6f69791b2c64a31df11c180840ea07de0b642f61
+Merge: c35b6e5 dd152d1
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Wed Oct 26 12:58:59 2016 -0700
+
+    Merge branch 'master' of gitlab.encs.vancouver.wsu.edu:colin/BeerButlers
+    Pulled more document stuff that Ryan made
+
+commit c35b6e54192e8ad27e56e224ebeb3d2eea3a076b
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Wed Oct 26 12:58:33 2016 -0700
+
+    Added more functionality to server.js
+
+commit dd152d18f2b5117751f911392da86cff2a923f83
+Author: Ryan Dale Miller <ryan.d.miller@wsu.edu>
+Date:   Wed Oct 26 12:23:39 2016 -0700
+
+    Added new UML documentation
+
+commit 465f15482ff97299440727b6c38a253ae27b29ff
+Merge: a0f873a af3291c
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Wed Oct 26 11:59:37 2016 -0700
+
+    Merge branch 'master' of gitlab.encs.vancouver.wsu.edu:colin/BeerButlers
+    Ryan added file architecture and activity UMLs
+
+commit a0f873aa4cbb97c855cf06c4ca33304177070e67
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Wed Oct 26 11:57:59 2016 -0700
+
+    Added node.js modules
+
+commit af3291c31b5039e16123fdaf0a94572fa925ffa3
+Author: Ryan Dale Miller <ryan.d.miller@wsu.edu>
+Date:   Wed Oct 26 11:45:01 2016 -0700
+
+    Added Documentation and UML diagrams
+
+commit 2a58b7b49edee33afe7b6d286dbfaeb7440c32df
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Tue Oct 25 14:01:30 2016 -0700
+
+    streamlined a JS function, and have not pushed in a while
+
+commit 5e957ec6821b8a606090acc5fe9918e05f2c5664
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Wed Oct 19 15:03:09 2016 -0700
+
+    Working on getting data from BreweryDB
+
+commit db1920af9ac92a3f208b98962c2b4ba3d553687f
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Tue Oct 18 15:17:46 2016 -0700
+
+    working on basic template to introduce AJAX call to BreweryDB
+
+commit 0bd8376e70dc2ce87a3c424d78147cc1ef62be69
+Author: Colin M St. Claire <colin.stclaire@wsu.edu>
+Date:   Fri Oct 14 12:55:23 2016 -0700
+
+    Initial commit
